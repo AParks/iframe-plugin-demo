@@ -61,4 +61,4 @@ plugin.controller('demoPluginCntl', ['$scope', 'znPluginData', function ($scope,
 	]
 });
  
-})("hipchat5", wizehive, angular);
+})("demoPlugin", wizehive, angular);
