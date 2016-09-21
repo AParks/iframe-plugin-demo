@@ -1,7 +1,7 @@
-angular.module('wizehive').controller('AppCntl', ['$scope', function(
+angular.module('wizehive', []).controller('AppCntl', ['$scope', function(
 		$scope
 ) {
 
-console.log('main controller');
+	console.log('main controller');
 
 }]);
