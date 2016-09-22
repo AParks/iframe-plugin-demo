@@ -208,7 +208,8 @@ var wizehive = {};
 		constants: {
 			S3_URL: 'wizehive-uploads',
 			S3_IMG_URL: 'wizehive-imgs',
-			WEBFORMS_URL: 'http://webforms.wizehive.com/'
+			WEBFORMS_URL: 'http://webforms.wizehive.com/',
+			API_URL: 'https://stage-api.zenginehq.com/v1'
 		}
 	}, global.wizehiveConfig);
 
