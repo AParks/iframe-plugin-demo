@@ -21,14 +21,12 @@
 <body ng-app="wizehive">
 	<div ng-controller="AppCntl">
 		
-	<!-- <div ng-include="'/iframe-plugin-demo/plugin/plugin.html'"></div> -->
-	<!-- 
-	<script type="text/ng-template" id="demo-plugin-main" class="ng-scope">
-	<div class="title">
-		<h1>{{text}}</h1>
-	</div>
-
-</script> -->
+	<script>
+	var link = document.querySelector('link[rel="import"]');
+	var content = link.import;
+	
+	document.body.appendChild(content.cloneNode(true));
+	</script>
 	<div ng-controller="demoPluginCntl">
 		<div ng-include="'demo-plugin-main'"></div>
 	</div>
