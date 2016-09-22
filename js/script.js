@@ -2,6 +2,8 @@ angular.module('wizehive', []).controller('AppCntl', ['$scope', '$http', '$templ
 		$scope, $http, $templateCache
 ) {
 
+	window.wizehive = window.parent.window.wizehive;
+	console.log(wizehive.token());
 	$http.get('/iframe-plugin-demo/plugin/plugin.html').then(function(response) {
 		var pluginContext = {
 			prefix: 'demoPlugin',
