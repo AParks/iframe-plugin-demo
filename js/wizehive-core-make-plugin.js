@@ -374,10 +374,10 @@
 			if (settings.type === 'filters') {
 				cacheName = cacheName + 'Filter';
 			}
-			if (wizehive.instanceCache.hasOwnProperty(cacheName)) {
+			if (wizehive.instanceCache && wizehive.instanceCache.hasOwnProperty(cacheName)) {
 				delete wizehive.instanceCache[cacheName];
 			}
-			if (wizehive.instanceCache.hasOwnProperty(cacheName + 'Provider')) {
+			if (wizehive.instanceCache && wizehive.instanceCache.hasOwnProperty(cacheName + 'Provider')) {
 				delete wizehive.instanceCache[cacheName + 'Provider'];
 			}
 
