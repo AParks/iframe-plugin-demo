@@ -770,11 +770,4 @@ console.log(scriptTemplate);
 
 	};
 	
-	jQuery.ajax({
-		url: 'https://aparks.github.io/iframe-plugin-demo/plugin/plugin.html',
-		success: function(html) {
-			console.log(html);
-			$('div[ng-controller=AppCntl]').prepend(html);
-		}
-	});	
 })(wizehive);
