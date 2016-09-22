@@ -426,9 +426,11 @@
 		 */
 		plugin.service = function(name, locals) {
 
-			return setupProvider(name, locals, {
+			angular.module('wizehive').service(name, locals);
+			return plugin;
+			/*return setupProvider(name, locals, {
 				type: 'services'
-			});
+			});*/
 
 		};
 
@@ -445,9 +447,11 @@
 		 */
 		plugin.filter = function(name, locals) {
 
-			return setupProvider(name, locals, {
+			angular.module('wizehive').filter(name, locals);
+			return plugin;
+			/*return setupProvider(name, locals, {
 				type: 'filters'
-			});
+			});*/
 
 		};
 
@@ -464,9 +468,11 @@
 		 */
 		plugin.factory = function(name, locals) {
 
-			return setupProvider(name, locals, {
+			angular.module('wizehive').factory(name, locals);
+			return plugin;
+			/*return setupProvider(name, locals, {
 				type: 'factories'
-			});
+			});*/
 
 		};
 
@@ -483,9 +489,11 @@
 		 */
 		plugin.controller = function(name, locals) {
 
-			return setupProvider(name, locals, {
-				type: 'controllers'
-			});
+			angular.module('wizehive').controller(name, locals);
+			return plugin;
+			//return setupProvider(name, locals, {
+			//	type: 'controllers'
+			//});
 
 		};
 
@@ -502,7 +510,9 @@
 		 */
 		plugin.directive = function(name, locals) {
 
-			if (!numberNewDirectives.hasOwnProperty(name)) {
+			angular.module('wizehive').directive(name, locals);
+			return plugin;
+			/*if (!numberNewDirectives.hasOwnProperty(name)) {
 				numberNewDirectives[name] = 1;
 			} else {
 				numberNewDirectives[name]++;
@@ -510,7 +520,7 @@
 
 			return setupProvider(name, locals, {
 				type: 'directives'
-			});
+			});*/
 
 		};
 
