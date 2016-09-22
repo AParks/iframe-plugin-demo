@@ -535,7 +535,7 @@
 				throw "Plugin registration settings must be an object";
 			}
 
-			angular.forEach(prefixed.services, function(prefixedService) {
+			/*angular.forEach(prefixed.services, function(prefixedService) {
 
 				angular.module('wizehive.plugins').lazyLoader.service(prefix + 'Zn' + prefixedService, [prefixedService + 'Factory', function(Factory) {
 					return Factory(prefix);
@@ -583,7 +583,7 @@
 			angular.forEach(providers.directives, setupDirective);
 
 			angular.forEach(providers.directives, registerDirective);
-
+*/
 			if (settings.route) {
 				settings.route = '/plugin' + settings.route;
 			}
