@@ -24,8 +24,8 @@
 	<script>
 	var link = document.querySelector('link[rel="import"]');
 	var content = link.import;
-	
-	document.body.appendChild(content.cloneNode(true));
+	var el = content.querySelector('head');
+	document.body.appendChild(el.cloneNode(true));
 	</script>
 	<div ng-controller="demoPluginCntl">
 		<div ng-include="'demo-plugin-main'"></div>
