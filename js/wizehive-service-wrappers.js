@@ -1,4 +1,4 @@
-angular.module('wizehive.services')
+angular.module('wizehive.services', [])
 	/**
 	 * znConfirm - plugin wrapper/namespace for confirm
 	 * 
