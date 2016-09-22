@@ -11,5 +11,5 @@ angular.module('wizehive', [])
 	    console.log($templateCache.get('demo-plugin-main'));
 
 	});
-}])
-.controller('AppCntl', []);
+}]);
+angular.module('wizehive').controller('AppCntl', []);
