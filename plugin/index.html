@@ -13,25 +13,13 @@
   
   <!-- plugin files -->
   <link type="text/css" rel="stylesheet" href="https://aparks.github.io/iframe-plugin-demo/css/demo-plugin.css">
-  <link rel="import" href="/iframe-plugin-demo/plugin/plugin.html">
   <script src="https://aparks.github.io/iframe-plugin-demo/js/demo-plugin.js"></script>
 
 
 </head>
 <body ng-app="wizehive">
 	<div ng-controller="AppCntl">
-		
-	<script>
-	var link = document.querySelector('link[rel="import"]');
-	var content = link.import;
-	var el = content.querySelector('head');
-	console.log(el);
-	document.body.appendChild(el.cloneNode(true));
-	</script>
-	<div ng-controller="demoPluginCntl">
 		<div ng-include="'demo-plugin-main'"></div>
-	</div>
-	</div>
 	</div>
 </body>
 </html>
