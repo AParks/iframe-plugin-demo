@@ -115,14 +115,14 @@ angular.module('wizehive.auth', [])
  * @since 0.x.x
  */
 angular.module('wizehive.resources', ['ngResource', 'wizehive.auth'])
-.factory('DataFactory', ['$rootScope', '$http', '$q', '$resource', 'Auth', 'PluginEvents', 'sharedMessages', function($rootScope, $http, $q, $resource, Auth, PluginEvents, sharedMessages) {
+.factory('DataFactory', ['$rootScope', '$http', '$q', '$resource', 'Auth', function($rootScope, $http, $q, $resource, Auth) {
 
 	return function(data) {
 
 		var pluginData = data || null;
 
 		var _apiBaseUrl = wizehive.config('constants').API_URL || '';
-console.log('DataFactory');
+		
 		/**
 		 * Maximum request duration, in ms, beyond which an auth token refresh + retry should not be attempted.
 		 * Authentication failures return very quickly. Helps prevent duplicate requests on server failure
@@ -265,7 +265,7 @@ console.log('DataFactory');
 					break;
 			}
 
-			PluginEvents.$broadcast.apply(PluginEvents, pluginArgs);
+			//PluginEvents.$broadcast.apply(PluginEvents, pluginArgs);
 			$rootScope.$broadcast.apply($rootScope, args);
 
 		}
@@ -348,7 +348,7 @@ console.log('DataFactory');
 						} else {
 
 							if (resp.status === 429 && !hasValidateOnlyParam(params)) {
-								sharedMessages.rateLimitExceeded(pluginData);
+							//	sharedMessages.rateLimitExceeded(pluginData);
 							}
 
 							if (params.lastType) {
