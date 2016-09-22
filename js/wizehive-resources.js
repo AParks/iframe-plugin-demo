@@ -122,7 +122,7 @@ angular.module('wizehive.resources', ['ngResource', 'wizehive.auth'])
 		var pluginData = data || null;
 
 		var _apiBaseUrl = wizehive.config('constants').API_URL || '';
-
+console.log('DataFactory');
 		/**
 		 * Maximum request duration, in ms, beyond which an auth token refresh + retry should not be attempted.
 		 * Authentication failures return very quickly. Helps prevent duplicate requests on server failure
