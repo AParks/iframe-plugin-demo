@@ -90,10 +90,11 @@
 							'</div>';
 
 			}
-console.log(id);
-console.log(scriptTemplate);
 			if ($templateCache) {
 				$templateCache.put(id, scriptTemplate);
+				
+console.log(id);
+console.log(scriptTemplate);
 			}
 
 		});
