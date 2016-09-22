@@ -20,7 +20,7 @@
 /**
  * Demo Controller
  */
-plugin.controller('demoPluginCntl', ['$scope', 'znPluginData', function ($scope, pd) {
+plugin.controller('demoPluginCntl', ['$scope', function ($scope) {
 	
 	$scope.text = 'Hello World!';
 
