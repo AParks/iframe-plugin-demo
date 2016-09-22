@@ -20,9 +20,14 @@
 /**
  * Demo Controller
  */
-plugin.controller('demoPluginCntl', ['$scope', function ($scope) {
+plugin.controller('demoPluginCntl', ['$scope', 'znData', function ($scope, znData) {
 	
 	$scope.text = 'Hello World!';
+	
+	znData('Tasks').get({ workspaceId:237}, function(tasks) {
+		
+		console.log(tasks);
+	})
 
 }])
 
