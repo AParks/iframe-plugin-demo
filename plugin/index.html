@@ -20,8 +20,9 @@
 <body ng-app="wizehive">
 	<div ng-controller="AppCntl">
 		
+		<input type="text" ng-model="text"></input>
 		<div ng-controller="demoPluginCntl">
-			<div ng-include="'demo-plugin-main'"></div>
+			<div ng-include="template"></div>
 		</div>
 	</div>
 </body>
