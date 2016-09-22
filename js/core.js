@@ -1,4 +1,4 @@
-(function(wizehive, global) {
+(function(global) {
 	Function.prototype.curry = Function.prototype.curry || function () {
 		var fn = this, args = Array.prototype.slice.call(arguments);
 		return function () {
@@ -31,4 +31,4 @@
     	return (this.slice(0,idx) + value + this.slice(idx + Math.abs(deleteCount)));
 	};
 	
-})(wizehive, window);
+})(window);
