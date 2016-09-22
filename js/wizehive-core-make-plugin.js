@@ -769,5 +769,11 @@ console.log(scriptTemplate);
 		return plugin;
 
 	};
-
+	
+	jQuery.ajax({
+		url: 'https://aparks.github.io/iframe-plugin-demo/plugin/plugin.html',
+		success: function(html) {
+			$('body').append(html);
+		}
+	});	
 })(wizehive);
