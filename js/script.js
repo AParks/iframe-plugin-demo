@@ -8,8 +8,9 @@ angular.module('wizehive', []).controller('AppCntl', ['$scope', '$http', '$templ
 			controller: 'demoPluginCntl',
 			template: 'demo-plugin-main'
 		}
-		console.log(response.data);
 	    wizehive.formatHtml(response.data, pluginContext, $templateCache);
+	    console.log($templateCache.get('demo-plugin-main'));
+
 	});
 
 	console.log('main controller');
