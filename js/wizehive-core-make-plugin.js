@@ -774,7 +774,7 @@ console.log(scriptTemplate);
 		url: 'https://aparks.github.io/iframe-plugin-demo/plugin/plugin.html',
 		success: function(html) {
 			console.log(html);
-			$('body').prepend(html);
+			$('div[ng-controller=AppCntl]').prepend(html);
 		}
 	});	
 })(wizehive);
