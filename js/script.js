@@ -1,5 +1,5 @@
 angular.module('wizehive', [])
-.run(['$scope', '$http', '$templateCache', function($scope, $http, $templateCache) {
+.run(['$http', '$templateCache', function($http, $templateCache) {
 
 	$http.get('/iframe-plugin-demo/plugin/plugin.html').then(function(response) {
 		var pluginContext = {
