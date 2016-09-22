@@ -12,4 +12,7 @@ angular.module('wizehive', [])
 
 	});
 }]);
-angular.module('wizehive').controller('AppCntl', []);
+angular.module('wizehive').controller('AppCntl', ['$scope', function($scope) {
+	
+	
+}]);
