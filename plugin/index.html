@@ -13,6 +13,7 @@
   
   <!-- plugin files -->
   <link type="text/css" rel="stylesheet" href="https://aparks.github.io/iframe-plugin-demo/css/demo-plugin.css">
+  <link rel="import" href="/iframe-plugin-demo/plugin/plugin.html">
   <script src="https://aparks.github.io/iframe-plugin-demo/js/demo-plugin.js"></script>
 
 
@@ -21,11 +22,13 @@
 	<div ng-controller="AppCntl">
 		
 	<!-- <div ng-include="'/iframe-plugin-demo/plugin/plugin.html'"></div> -->
+	<!-- 
 	<script type="text/ng-template" id="demo-plugin-main" class="ng-scope">
 	<div class="title">
 		<h1>{{text}}</h1>
 	</div>
-</script>
+
+</script> -->
 	<div ng-controller="demoPluginCntl">
 		<div ng-include="'demo-plugin-main'"></div>
 	</div>
