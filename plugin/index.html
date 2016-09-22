@@ -19,9 +19,11 @@
 <body ng-app="wizehive">
 	<div ng-controller="AppCntl">
 		
-		<div ng-controller="demoPluginCntl">
-			{{text}}
-		</div>
+	<div ng-include="'/iframe-plugin-demo/plugin/plugin.html'"></div>
+	
+	<div ng-controller="demoPluginCntl">
+		{{text}}
+	</div>
 	</div>
 </body>
 </html>
