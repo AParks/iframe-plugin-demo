@@ -19,7 +19,10 @@
 </head>
 <body ng-app="wizehive">
 	<div ng-controller="AppCntl">
-		<div ng-include="'demo-plugin-main'"></div>
+		
+		<div ng-controller="demoPluginCntl">
+			<div ng-include="'demo-plugin-main'"></div>
+		</div>
 	</div>
 </body>
 </html>
